@@ -1,0 +1,654 @@
+{
+    "version": "v1",
+    "config": {
+        "visState": {
+            "filters": [
+                {
+                    "dataId": [
+                        "my_city_data"
+                    ],
+                    "id": "083mx0ihk",
+                    "name": [
+                        "datetime"
+                    ],
+                    "type": "timeRange",
+                    "value": [
+                        1767793160000,
+                        1767793161000
+                    ],
+                    "plotType": {
+                        "interval": "1-millisecond",
+                        "defaultTimeFormat": "L  LTS",
+                        "type": "histogram",
+                        "aggregation": "sum"
+                    },
+                    "animationWindow": "free",
+                    "yAxis": null,
+                    "view": "minified",
+                    "speed": 1,
+                    "enabled": true
+                }
+            ],
+            "layers": [
+                {
+                    "id": "6y1oyhk",
+                    "type": "hexagon",
+                    "config": {
+                        "dataId": "my_city_data",
+                        "label": "HexbinLocationCount",
+                        "color": [
+                            18,
+                            92,
+                            119
+                        ],
+                        "highlightColor": [
+                            252,
+                            242,
+                            26,
+                            255
+                        ],
+                        "columns": {
+                            "lat": "lat",
+                            "lng": "lng"
+                        },
+                        "isVisible": true,
+                        "visConfig": {
+                            "opacity": 0.8,
+                            "worldUnitSize": 1,
+                            "resolution": 8,
+                            "colorRange": {
+                                "colors": [
+                                    "#00939C",
+                                    "#6BB5B9",
+                                    "#AAD7D9",
+                                    "#F4B198",
+                                    "#DF744E",
+                                    "#C22E00"
+                                ],
+                                "name": "Uber Viz Diverging",
+                                "type": "diverging",
+                                "category": "Uber"
+                            },
+                            "coverage": 1,
+                            "sizeRange": [
+                                0,
+                                500
+                            ],
+                            "percentile": [
+                                0,
+                                100
+                            ],
+                            "elevationPercentile": [
+                                0,
+                                100
+                            ],
+                            "elevationScale": 25,
+                            "enableElevationZoomFactor": true,
+                            "fixedHeight": false,
+                            "colorAggregation": "average",
+                            "sizeAggregation": "average",
+                            "enable3d": true
+                        },
+                        "hidden": false,
+                        "textLabel": [
+                            {
+                                "field": null,
+                                "color": [
+                                    255,
+                                    255,
+                                    255
+                                ],
+                                "size": 18,
+                                "offset": [
+                                    0,
+                                    0
+                                ],
+                                "anchor": "start",
+                                "alignment": "center",
+                                "outlineWidth": 0,
+                                "outlineColor": [
+                                    255,
+                                    0,
+                                    0,
+                                    255
+                                ],
+                                "background": false,
+                                "backgroundColor": [
+                                    0,
+                                    0,
+                                    200,
+                                    255
+                                ]
+                            }
+                        ]
+                    },
+                    "visualChannels": {
+                        "colorField": null,
+                        "colorScale": "quantile",
+                        "sizeField": null,
+                        "sizeScale": "linear"
+                    }
+                },
+                {
+                    "id": "0z5hslu",
+                    "type": "point",
+                    "config": {
+                        "dataId": "my_city_data",
+                        "columnMode": "points",
+                        "label": "FamilyContribution",
+                        "color": [
+                            34,
+                            63,
+                            154
+                        ],
+                        "highlightColor": [
+                            252,
+                            242,
+                            26,
+                            255
+                        ],
+                        "columns": {
+                            "lat": "lat",
+                            "lng": "lng"
+                        },
+                        "isVisible": false,
+                        "visConfig": {
+                            "radius": 10,
+                            "fixedRadius": false,
+                            "opacity": 0.8,
+                            "outline": false,
+                            "thickness": 2,
+                            "strokeColor": null,
+                            "colorRange": {
+                                "colors": [
+                                    "#FFF7EC",
+                                    "#FDDCAF",
+                                    "#FDB07A",
+                                    "#F16C49",
+                                    "#C81D13",
+                                    "#7F0000"
+                                ],
+                                "name": "OrRd",
+                                "type": "sequential",
+                                "category": "ColorBrewer"
+                            },
+                            "strokeColorRange": {
+                                "name": "Global Warming",
+                                "type": "sequential",
+                                "category": "Uber",
+                                "colors": [
+                                    "#4C0035",
+                                    "#880030",
+                                    "#B72F15",
+                                    "#D6610A",
+                                    "#EF9100",
+                                    "#FFC300"
+                                ]
+                            },
+                            "radiusRange": [
+                                0,
+                                50
+                            ],
+                            "filled": true,
+                            "billboard": false,
+                            "allowHover": true,
+                            "showNeighborOnHover": false,
+                            "showHighlightColor": true
+                        },
+                        "hidden": false,
+                        "textLabel": [
+                            {
+                                "field": null,
+                                "color": [
+                                    255,
+                                    255,
+                                    255
+                                ],
+                                "size": 18,
+                                "offset": [
+                                    0,
+                                    0
+                                ],
+                                "anchor": "start",
+                                "alignment": "center",
+                                "outlineWidth": 0,
+                                "outlineColor": [
+                                    255,
+                                    0,
+                                    0,
+                                    255
+                                ],
+                                "background": false,
+                                "backgroundColor": [
+                                    0,
+                                    0,
+                                    200,
+                                    255
+                                ]
+                            }
+                        ]
+                    },
+                    "visualChannels": {
+                        "colorField": {
+                            "name": "added_by",
+                            "type": "string"
+                        },
+                        "colorScale": "ordinal",
+                        "strokeColorField": null,
+                        "strokeColorScale": "quantile",
+                        "sizeField": null,
+                        "sizeScale": "linear"
+                    }
+                },
+                {
+                    "id": "istcqhn",
+                    "type": "heatmap",
+                    "config": {
+                        "dataId": "my_city_data",
+                        "columnMode": "points",
+                        "label": "HeatmapRating",
+                        "color": [
+                            136,
+                            87,
+                            44
+                        ],
+                        "highlightColor": [
+                            252,
+                            242,
+                            26,
+                            255
+                        ],
+                        "columns": {
+                            "lat": "lat",
+                            "lng": "lng"
+                        },
+                        "isVisible": false,
+                        "visConfig": {
+                            "opacity": 0.8,
+                            "colorRange": {
+                                "name": "Global Warming",
+                                "type": "sequential",
+                                "category": "Uber",
+                                "colors": [
+                                    "#4C0035",
+                                    "#880030",
+                                    "#B72F15",
+                                    "#D6610A",
+                                    "#EF9100",
+                                    "#FFC300"
+                                ]
+                            },
+                            "radius": 30
+                        },
+                        "hidden": false,
+                        "textLabel": [
+                            {
+                                "field": null,
+                                "color": [
+                                    255,
+                                    255,
+                                    255
+                                ],
+                                "size": 18,
+                                "offset": [
+                                    0,
+                                    0
+                                ],
+                                "anchor": "start",
+                                "alignment": "center",
+                                "outlineWidth": 0,
+                                "outlineColor": [
+                                    255,
+                                    0,
+                                    0,
+                                    255
+                                ],
+                                "background": false,
+                                "backgroundColor": [
+                                    0,
+                                    0,
+                                    200,
+                                    255
+                                ]
+                            }
+                        ]
+                    },
+                    "visualChannels": {
+                        "weightField": {
+                            "name": "rating",
+                            "type": "real"
+                        },
+                        "weightScale": "linear"
+                    }
+                },
+                {
+                    "id": "m0blt96",
+                    "type": "point",
+                    "config": {
+                        "dataId": "my_city_data",
+                        "columnMode": "points",
+                        "label": "CategoryDiversity",
+                        "color": [
+                            179,
+                            173,
+                            158
+                        ],
+                        "highlightColor": [
+                            252,
+                            242,
+                            26,
+                            255
+                        ],
+                        "columns": {
+                            "lat": "lat",
+                            "lng": "lng"
+                        },
+                        "isVisible": true,
+                        "visConfig": {
+                            "radius": 15,
+                            "fixedRadius": false,
+                            "opacity": 0.8,
+                            "outline": false,
+                            "thickness": 2,
+                            "strokeColor": null,
+                            "colorRange": {
+                                "colors": [
+                                    "#7400B8",
+                                    "#6937C3",
+                                    "#6150CB",
+                                    "#5866D1",
+                                    "#437BDA",
+                                    "#388DDE",
+                                    "#409DDF",
+                                    "#4AAEE0",
+                                    "#47BFE2",
+                                    "#56CFE1",
+                                    "#5EDFE1",
+                                    "#72EFDD"
+                                ],
+                                "name": "ViovetOcean",
+                                "type": "sequential",
+                                "category": "Uber"
+                            },
+                            "strokeColorRange": {
+                                "name": "Global Warming",
+                                "type": "sequential",
+                                "category": "Uber",
+                                "colors": [
+                                    "#4C0035",
+                                    "#880030",
+                                    "#B72F15",
+                                    "#D6610A",
+                                    "#EF9100",
+                                    "#FFC300"
+                                ]
+                            },
+                            "radiusRange": [
+                                0,
+                                50
+                            ],
+                            "filled": true,
+                            "billboard": false,
+                            "allowHover": true,
+                            "showNeighborOnHover": false,
+                            "showHighlightColor": true
+                        },
+                        "hidden": false,
+                        "textLabel": [
+                            {
+                                "field": {
+                                    "name": "category",
+                                    "type": "string"
+                                },
+                                "color": [
+                                    255,
+                                    255,
+                                    255
+                                ],
+                                "size": 18,
+                                "offset": [
+                                    0,
+                                    0
+                                ],
+                                "anchor": "start",
+                                "alignment": "center",
+                                "outlineWidth": 0,
+                                "outlineColor": [
+                                    255,
+                                    0,
+                                    0,
+                                    255
+                                ],
+                                "background": false,
+                                "backgroundColor": [
+                                    0,
+                                    0,
+                                    200,
+                                    255
+                                ]
+                            }
+                        ]
+                    },
+                    "visualChannels": {
+                        "colorField": {
+                            "name": "category",
+                            "type": "string"
+                        },
+                        "colorScale": "ordinal",
+                        "strokeColorField": null,
+                        "strokeColorScale": "quantile",
+                        "sizeField": null,
+                        "sizeScale": "linear"
+                    }
+                },
+                {
+                    "id": "tvo4ik",
+                    "type": "point",
+                    "config": {
+                        "dataId": "my_city_data",
+                        "columnMode": "points",
+                        "label": "Rating",
+                        "color": [
+                            231,
+                            159,
+                            213
+                        ],
+                        "highlightColor": [
+                            252,
+                            242,
+                            26,
+                            255
+                        ],
+                        "columns": {
+                            "lat": "lat",
+                            "lng": "lng"
+                        },
+                        "isVisible": false,
+                        "visConfig": {
+                            "radius": 10,
+                            "fixedRadius": false,
+                            "opacity": 0.8,
+                            "outline": false,
+                            "thickness": 2,
+                            "strokeColor": null,
+                            "colorRange": {
+                                "name": "Global Warming",
+                                "type": "sequential",
+                                "category": "Uber",
+                                "colors": [
+                                    "#4C0035",
+                                    "#880030",
+                                    "#B72F15",
+                                    "#D6610A",
+                                    "#EF9100",
+                                    "#FFC300"
+                                ]
+                            },
+                            "strokeColorRange": {
+                                "name": "Global Warming",
+                                "type": "sequential",
+                                "category": "Uber",
+                                "colors": [
+                                    "#4C0035",
+                                    "#880030",
+                                    "#B72F15",
+                                    "#D6610A",
+                                    "#EF9100",
+                                    "#FFC300"
+                                ]
+                            },
+                            "radiusRange": [
+                                0,
+                                50
+                            ],
+                            "filled": true,
+                            "billboard": false,
+                            "allowHover": true,
+                            "showNeighborOnHover": false,
+                            "showHighlightColor": true
+                        },
+                        "hidden": false,
+                        "textLabel": [
+                            {
+                                "field": null,
+                                "color": [
+                                    255,
+                                    255,
+                                    255
+                                ],
+                                "size": 18,
+                                "offset": [
+                                    0,
+                                    0
+                                ],
+                                "anchor": "start",
+                                "alignment": "center",
+                                "outlineWidth": 0,
+                                "outlineColor": [
+                                    255,
+                                    0,
+                                    0,
+                                    255
+                                ],
+                                "background": false,
+                                "backgroundColor": [
+                                    0,
+                                    0,
+                                    200,
+                                    255
+                                ]
+                            }
+                        ]
+                    },
+                    "visualChannels": {
+                        "colorField": {
+                            "name": "rating",
+                            "type": "real"
+                        },
+                        "colorScale": "quantile",
+                        "strokeColorField": null,
+                        "strokeColorScale": "quantile",
+                        "sizeField": null,
+                        "sizeScale": "linear"
+                    }
+                }
+            ],
+            "effects": [],
+            "interactionConfig": {
+                "tooltip": {
+                    "fieldsToShow": {
+                        "my_city_data": [
+                            {
+                                "name": "id",
+                                "format": null
+                            },
+                            {
+                                "name": "name",
+                                "format": null
+                            },
+                            {
+                                "name": "category",
+                                "format": null
+                            },
+                            {
+                                "name": "rating",
+                                "format": null
+                            },
+                            {
+                                "name": "added_by",
+                                "format": null
+                            }
+                        ]
+                    },
+                    "compareMode": false,
+                    "compareType": "absolute",
+                    "enabled": true
+                },
+                "brush": {
+                    "size": 0.5,
+                    "enabled": false
+                },
+                "geocoder": {
+                    "enabled": false
+                },
+                "coordinate": {
+                    "enabled": false
+                }
+            },
+            "layerBlending": "normal",
+            "overlayBlending": "normal",
+            "splitMaps": [],
+            "animationConfig": {
+                "currentTime": null,
+                "speed": 1
+            },
+            "editor": {
+                "features": [],
+                "visible": true
+            }
+        },
+        "mapState": {
+            "bearing": 0,
+            "dragRotate": false,
+            "latitude": 44.43213858915266,
+            "longitude": 26.10448281709589,
+            "pitch": 0,
+            "zoom": 11.654899322642764,
+            "isSplit": false,
+            "isViewportSynced": true,
+            "isZoomLocked": false,
+            "splitMapViewports": []
+        },
+        "mapStyle": {
+            "styleType": "dark-matter",
+            "topLayerGroups": {},
+            "visibleLayerGroups": {
+                "label": true,
+                "road": true,
+                "border": false,
+                "building": true,
+                "water": true,
+                "land": true,
+                "3d building": false
+            },
+            "threeDBuildingColor": [
+                15.035172933000911,
+                15.035172933000911,
+                15.035172933000911
+            ],
+            "backgroundColor": [
+                0,
+                0,
+                0
+            ],
+            "mapStyles": {}
+        },
+        "uiState": {
+            "mapControls": {
+                "mapLegend": {
+                    "active": true
+                }
+            }
+        }
+    }
+}
